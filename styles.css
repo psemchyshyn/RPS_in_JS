@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    background-color: #334347;
+}
+
+
+.header {
+    text-align: center;
+    background-color: darkgray;
+    padding: 5vh;
+}
+
+.header_title{
+    color: #334347;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: darkolivegreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    width: 20%;
+    transition: all linear 0.3s;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: lawngreen;
+}
+
+.result{
+    color:darkgray;
+}
+
+.result_table {
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.badge {
+    background-color: darkolivegreen;
+    color: white;
+    font-size: 15px;
+}
+
+.badge1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+}
+
+.badge2 {
+    position: absolute;
+    right: 3px;
+    top: 50%;
+
+}
+
+.message {
+    font-size: 28px;
+}
+
+.main {
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3fr 1fr 1fr;
+    align-items: center;
+}
+
+.score {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+
+}
+
+.computerImg {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    position: relative;
+}
+
+.playerImg {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+}
+
+.playerImg img {
+    width: 35%;
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+.computerImg img {
+    width: 35%;
+    display: block;
+    right: 0;
+    position: absolute;
+  }
+
+  
+.moves {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}

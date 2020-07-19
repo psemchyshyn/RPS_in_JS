@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header class="header">
+        <h3 class="header_title">Rock Paper Scissors Game</h3>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <button class="btn" type="button" id="start">Start Playing</button>
+        </div>
+        <div class="main">
+            <div class="playerImg"><img src='./images/rock.png' alt="move"></div>
+            <div class="score">
+                <div class="player"></div>
+                <div class="result">
+                    <div class="result_table">
+                        <span class="badge badge1">User</span>
+                        <span id="player_score">0</span>:<span id="computer_score">0</span>
+                        <span class="badge badge2">Computer</span>
+                    </div>
+                    <div class="message">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="computer"></div>
+            </div>
+            <div class="computerImg"><img src='./images/rock.png' alt="move"></div>
+            <div class="moves">
+                <button class="btn" id="paper">Paper</button>
+                <button class="btn" id="rock">Rock</button>
+                <button class="btn" id="scissors">Scissors</button>
+            </div>
+            <div class="options">
+                <button class="btn" id="exit">Exit</button>
+            </div>
+        </div>
+    </div>
+<script src="app_logic.js"></script>
+</body>
+</html>
